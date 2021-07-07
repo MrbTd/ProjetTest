@@ -1,6 +1,7 @@
-const express=require('express')
-const app=express()
+const express = require('express')
+const app = express()
 const cors = require('cors')
+
 app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
@@ -90,4 +91,6 @@ let Persons=[
 
   })
   const PORT = process.env.PORT || 3001
-  app.listen(PORT,()=>console.log('Run on port',PORT)) 
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
