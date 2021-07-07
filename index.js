@@ -89,5 +89,5 @@ let Persons=[
       res.json(obj)
 
   })
-const PORT=3001
-app.listen(PORT,()=>console.log('Run on port',PORT)) 
+  const PORT = process.env.PORT || 3001
+  app.listen(PORT,()=>console.log('Run on port',PORT)) 
