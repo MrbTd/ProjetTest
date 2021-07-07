@@ -32,8 +32,7 @@ let Persons=[
   }
   
   app.get('/',(req,res)=>{
-      const text="<h1>Bienvenue</h1>"
-      res.send(text)
+      res.send("<h1>Bienvenue</h1>")
   })
 
   app.get('/api/persons',(req,res)=>{
